@@ -38,6 +38,6 @@ class AireCalculatorTest extends TestCase
         $aireCalculator  = new AireCalculator();
         $rayon=5;
         $resultat = $aireCalculator->getAireCercle($rayon);
-        $this->assertEquals(10,$resultat);
+        $this->assertEquals(78.5,$resultat);
     }
 }
