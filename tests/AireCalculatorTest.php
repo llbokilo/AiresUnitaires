@@ -3,7 +3,7 @@
 namespace App\Tests;
 
 use PHPUnit\Framework\TestCase;
-use AireCalculator;
+use App\Utils\AireCalculator;
 
 class AireCalculatorTest extends TestCase
 {
@@ -19,7 +19,7 @@ class AireCalculatorTest extends TestCase
         $longueur=5;
         $hauteur =4;
         $resultat = $aireCalculator->getAireTriangle($longueur,$hauteur);
-        $this->assertEquals(20,$resultat);
+        $this->assertEquals(10,$resultat);
     }
 
     /**@test parallelogramme*/
@@ -29,7 +29,7 @@ class AireCalculatorTest extends TestCase
         $longueur=5;
         $hauteur =4;
         $resultat = $aireCalculator->getAirePara($longueur,$hauteur);
-        $this->assertEquals(10,$resultat);
+        $this->assertEquals(20,$resultat);
     }
 
     /**@test cercle*/

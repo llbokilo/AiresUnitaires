@@ -1,4 +1,7 @@
 <?php
+
+namespace App\Utils;
+
 class AireCalculator
 {
     /*calcul surface triangle */
